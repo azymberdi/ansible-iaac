@@ -1,0 +1,15 @@
+---
+- hosts: localhost
+  tasks:
+  - ec2:
+      key_name: my_bastion_keypair
+      instance_type: t2.micro
+      image: ami-0323c3dd2da7fb37d
+      region: us-east-1
+      #wait: yes
+      #group: webserver
+      count: 1
+      #vpc_subnet_id: subnet-29e63245
+      #assign_public_ip: yes
+      instance_tags:
+        Name: Created by Azymberdi Gutdanov

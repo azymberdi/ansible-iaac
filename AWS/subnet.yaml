@@ -1,0 +1,23 @@
+---
+- hosts: localhost
+  tasks:
+  - name: Create subnet for VPC
+    ec2_vpc_subnet:
+      state: absent
+      region: us-east-1
+      vpc_id: vpc-0d29cc1991e8e8a08
+      cidr: 10.10.1.0/24
+
+  - name: Create subnet for VPC
+ec2_vpc_subnet:
+  state: absent
+  region: us-east-1
+  vpc_id: vpc-0d29cc1991e8e8a08
+  cidr: 10.10.1.0/24
+
+  - name: Create subnet for VPC
+    ec2_vpc_subnet:
+      state: absent
+      region: us-east-1
+      vpc_id: vpc-0d29cc1991e8e8a08
+      cidr: 10.10.1.0/24
