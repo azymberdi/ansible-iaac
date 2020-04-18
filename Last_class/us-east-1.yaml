@@ -1,0 +1,8 @@
+key_name:          "MyMac"
+instance_type:     "t2.micro"
+image:             "ami-0323c3dd2da7fb37d"
+group_id:             "sg-04a794b4642e7f342"
+count:             5
+vpc_subnet_id:     "subnet-01f6777d0a58e76c3"
+assign_public_ip:  yes
+region:            "us-east-1"

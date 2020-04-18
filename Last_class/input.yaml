@@ -1,0 +1,14 @@
+---
+- hosts: localhost
+  vars_files:
+  - some_region.yaml
+  become: true
+  become_method: sudo
+  tasks:
+  - name: Package
+    package:
+      name: "{{package_name}}"
+      state: "{{state}}"
+      #include_vars: some_region.yaml
+
+#ansible-playbook input.yaml --extra-vars "package_name=telnet" --extra-vars "state=installed"
